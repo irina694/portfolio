@@ -21,28 +21,39 @@
 
     <div class="w-full lg:w-1/5 float-left border-left min-h-screen p-2">
 
-        <div class="w-full">
+        <div class="w-full float-left">
           <div class="w-full text-center m-auto">
-            <a href="home.html" target="_self" alt="logo">
+            <a href="index.html" target="_self" alt="logo">
               <image class="w-40 m-auto" src="images/logo.png" alt="logo"></image>
             </a>
           </div>
         </div>
-        <div class="w-full text-center">
+        <div class="w-full text-center float-left">
           <div class="uppercase mt-16 text-xl">
-              <span class="text-gray-400">work</span>
+              <div class="text-gray-400">works</div>
           </div>
           <div class="uppercase mt-6 text-base">
-              <span class="text-gray-500 text-gray-800 active">studio</span>
+              <div class="text-gray-500">studio</div>
           </div>
-					<div class="uppercase mt-8 text-base">
+					<div class="mt-6 text-xs w-full float-left">
+              <div id="bay-area" class="text-gray-800 active w-full float-left mt-1">Bay Area series</div>
+							<div onclick="showGallery(this)" id="audumbla" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Audumbla</div>
+							<div id="pond-series" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Pond series</div>
+							<div id="still-life" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Still life</div>
+							<div id="yosemite-vallye" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Yosemite valley</div>
+							<div id="borges-series" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Borges series</div>
+							<div id="warboar" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Warboar</div>
+          </div>
+
+
+					<div class="uppercase mt-8 text-base float-left w-full">
               <span class="cursor-pointer text-gray-500 hover:text-gray-800">UI & UX</span>
           </div>
         </div>
         <div class="w-full text-center">
           <div class="uppercase my-16 text-xl">
             <div class="cursor-pointer text-gray-500 hover:text-gray-900">
-              <span class="">CV</span>
+              <a href="images/CV_IrinaPatrikeeva.pdf" target="_blank">CV</a>
             </div>
           </div>
         </div>
@@ -56,10 +67,12 @@
 
     </div>
 
-    <div class="w-full lg:w-4/5 float-left min-h-screen p-2">
+    <div id="bay-area-gallery" class="w-full lg:w-4/5 float-left min-h-screen p-2">
     	<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
-					<image class="m-auto max-h-full max-w-full" src="images/studio/2021/Bay Area/painting 1 full.JPG"></image>
+					<a href="images/studio/2021/Bay Area/painting 1 full.JPG" target="_blank" title="Palace of Fine Arts">
+						<image class="m-auto max-h-full max-w-full" src="images/studio/2021/Bay Area/painting 1 full.JPG"></image>
+					</a>
 				</div>
 			</div>
 			<div class="w-full lg:w-1/2 float-left text-center lg:hidden">
@@ -72,7 +85,9 @@
 			</div>
 			<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
-					<image class="m-auto max-h-full max-w-full" src="images/studio/2021/Bay Area/painting 2 full.JPG"></image>
+					<a href="images/studio/2021/Bay Area/painting 2 full.JPG" target="_blank" title="Alcatraz Island">
+						<image class="m-auto max-h-full max-w-full" src="images/studio/2021/Bay Area/painting 2 full.JPG"></image>
+					</a>
 				</div>
 			</div>
 			<div class="w-full lg:w-1/2 float-left text-center hidden lg:block">
@@ -97,14 +112,49 @@
 				<div class="w-full float-left mt-1">The Alcatraz Island features a canyon between the Alcatraz Island and the city of San Francisco, where the ocean floor used to be.</div>
 				<div class="w-full float-left mt-1">Both paintings were inspired by science-fiction literature, especially the Dune series by Frank Herbert and NASA Perseverance rover landing on Mars.</div>
 			</div>
-
-
-
     </div>
+
+		<div id="audumbla-gallery" class="w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
+    	<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
+				<div class="w-full m-auto h-full p-4">
+					<a href="images/studio/2020/Audumbla/IMG-2163.JPG" target="_blank" title="Audumbla">
+						<image class="m-auto max-h-full max-w-full" src="images/studio/2020/Audumbla/IMG-2163.JPG"></image>
+					</a>
+				</div>
+			</div>
+			<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
+				<div class="w-full m-auto h-full p-4">
+				</div>
+			</div>
+			<div class="w-full lg:w-1/2 float-left text-center">
+				<div class="w-full float-left p-4 text-xs text-gray-600">
+					<div class="w-full float-left">Audumbla</div>
+					<div class="w-full float-left">2020</div>
+					<div class="w-full float-left">9” x 12”</div>
+					<div class="w-full float-left">acrylic paint, acrylic pour, impasto</div>
+				</div>
+			</div>
+			<div class="w-full lg:w-1/2 float-left text-center">
+				<div class="w-full float-left p-4 text-xs text-gray-600">
+				</div>
+			</div>
+			<div class="w-full float-left text-xs p-4 text-gray-800">
+				<div class="w-full float-left my-1">TBD</div>
+			</div>
+    </div>
+
+
+		<div class="w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
+ 			UI UX
+		</div>
+
   </div>
 
   <footer class="w-full p-8 text-center">
-    	<p class="text-xs"> © 2021 Irina Patrikeeva</p>
+    	<p class="text-xs text-gray-600">© 2021 Irina Patrikeeva</p>
   </footer>
+
+	<!-- JavaScript Files -->
+	<script src="js/app.js"></script>
 </body>
 </html>
