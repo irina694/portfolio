@@ -36,13 +36,13 @@
               <div class="text-gray-500">studio</div>
           </div>
 					<div class="mt-6 text-xs w-full float-left">
-              <div id="bay-area" class="text-gray-800 active w-full float-left mt-1">Bay Area series</div>
-							<div onclick="showGallery(this)" id="audumbla" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Audumbla</div>
-							<div id="pond-series" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Pond series</div>
-							<div id="still-life" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Still life</div>
-							<div id="yosemite-vallye" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Yosemite valley</div>
-							<div id="borges-series" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Borges series</div>
-							<div id="warboar" class="cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Warboar</div>
+              <div onclick="showGallery('bay-area')" id="bay-area" class="nav text-gray-800 w-full float-left mt-1">Bay Area series</div>
+							<div onclick="showGallery('audumbla')" id="audumbla" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Audumbla</div>
+							<div id="pond-series" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Pond series</div>
+							<div id="still-life" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Still life</div>
+							<div id="yosemite-vallye" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Yosemite valley</div>
+							<div id="borges-series" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Borges series</div>
+							<div id="warboar" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Warboar</div>
           </div>
 
 
@@ -67,7 +67,7 @@
 
     </div>
 
-    <div id="bay-area-gallery" class="w-full lg:w-4/5 float-left min-h-screen p-2">
+    <div id="bay-area-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2">
     	<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/studio/2021/Bay Area/painting 1 full.JPG" target="_blank" title="Palace of Fine Arts">
@@ -114,7 +114,7 @@
 			</div>
     </div>
 
-		<div id="audumbla-gallery" class="w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
+		<div id="audumbla-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
     	<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/studio/2020/Audumbla/IMG-2163.JPG" target="_blank" title="Audumbla">
@@ -137,9 +137,6 @@
 			<div class="w-full lg:w-1/2 float-left text-center">
 				<div class="w-full float-left p-4 text-xs text-gray-600">
 				</div>
-			</div>
-			<div class="w-full float-left text-xs p-4 text-gray-800">
-				<div class="w-full float-left my-1">TBD</div>
 			</div>
     </div>
 
