@@ -2,12 +2,13 @@
 
 function showGallery(id) {
 
+
   if ( id && document ) {
 
     // Highlight selected navigation
 
     var navs = document.getElementsByClassName('nav');
-    
+
     // Remove active class from all navs except for selected nav
     if ( navs ) {
 
