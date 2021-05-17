@@ -8,6 +8,7 @@ function showGallery(id) {
     // Highlight selected navigation
 
     var navs = document.getElementsByClassName('nav');
+    console.log(navs);
 
     // Remove active class from all navs except for selected nav
     if ( navs ) {
@@ -53,5 +54,8 @@ function showGallery(id) {
       gallery.classList.remove('hidden');
     }
 
+    if ( window ) {
+      window.scrollTo(0,0);
+    }
   }
 }

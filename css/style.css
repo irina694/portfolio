@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Libre Baskerville', serif;
+  scroll-behavior: smooth;
 }
 
 .subtitle {
