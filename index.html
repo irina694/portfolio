@@ -2,81 +2,143 @@
 <html lang="en">
 
 <head>
-	<meta name="description" content="Irina Hallinan">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="LegendTheme" content="legendtheme">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Irina Hallinan</title>
+    <meta name="description" content="Irina Hallinan">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="LegendTheme" content="legendtheme">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Irina Hallinan</title>
 
     <!-- CSS Files -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+          rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="images/logo.png">
 </head>
 
 <body class="bg-gray-50">
 
-  <div class="min-h-screen w-full float-left p-10 bg-gray-50">
+	<div class="min-h-screen w-full float-left p-10 bg-gray-50">
 
-    <div class="w-full lg:w-1/5 float-left border-left min-h-screen p-2">
+		<div id="navigation-menu" class="hidden lg:block w-full lg:w-1/5 2xl:px-8 float-left border-left p-2">
 
-        <div class="w-full float-left">
-          <div class="w-full text-center m-auto">
-            <a href="/portfolio" target="_self" alt="logo">
-              <image class="w-40 m-auto" src="images/logo.png" alt="logo"></image>
-            </a>
-          </div>
-        </div>
-        <div class="w-full text-center float-left">
-          <div class="uppercase mt-6 text-base">
-              <div class="text-gray-400 subtitle">studio</div>
-          </div>
-					<div class="mt-6 text-xs w-full float-left">
-              <div onclick="showGallery('bay-area');" id="bay-area" class="nav text-gray-800 w-full float-left mt-1">Bay Area series</div>
-							<div onclick="showGallery('audumbla');" id="audumbla" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Auðumbla</div>
-							<div onclick="showGallery('pond-series');" id="pond-series" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Pond series</div>
-							<div onclick="showGallery('still-life');" id="still-life" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Still life</div>
-							<div onclick="showGallery('yosemite-valley');" id="yosemite-valley" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Yosemite valley</div>
-							<div onclick="showGallery('borges-series');" id="borges-series" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Borges series</div>
-							<div onclick="showGallery('warboar');" id="warboar" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Warboar</div>
-          </div>
+			<div class="w-full float-left">
+				<div class="w-full text-center m-auto">
+					<a href="/portfolio" target="_self" alt="logo">
+						<image class="w-40 m-auto" src="images/logo.png" alt="logo"></image>
+					</a>
 				</div>
+			</div>
 
-				<div class="w-full text-center float-left">
-					<div class="uppercase mt-6 text-base float-left w-full">
-              <div class="text-gray-400 subtitle">UI & UX</div>
-          </div>
-					<div class="mt-6 text-xs w-full float-left">
-              <div onclick="showGallery('nartwhal');" id="nartwhal" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Nartwhal</div>
-							<div onclick="showGallery('nams');" id="nams" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">NASA Academic Mission Services</div>
-							<div onclick="showGallery('quantum');" id="quantum" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Quantum</div>
-							<div onclick="showGallery('riacs');" id="riacs" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">RIACS</div>
-							<div onclick="showGallery('insight');" id="insight" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">NASA Insight</div>
-          </div>
-        </div>
+			<div class="w-full text-center float-left">
+				<div class="uppercase my-6 text-base">
+					<div class="nav cursor-pointer text-gray-500 hover:text-gray-800 subtitle">
+						<a href="images/Irina_Hallinan_EECS_2023.pdf" target="_blank">Resume</a>
+					</div>
+				</div>
+			</div>
 
-        <div class="w-full text-center float-left">
-          <div class="uppercase my-16 text-base">
-            <div class="nav cursor-pointer text-gray-500 hover:text-gray-800 subtitle">
-              <a href="images/Resume Irina Hallinan.pdf" target="_blank">Resume</a>
-            </div>
-          </div>
-        </div>
-        <div class="w-full text-center">
-          <div class="uppercase my-16 text-base subtitle">
-              <div onclick="showGallery('about');" id="about" class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left">About</div>
-          </div>
-        </div>
+			<div class="w-full text-center float-left">
+				<div class="uppercase mt-6 text-base float-left w-full">
+					<div class="text-gray-400 subtitle">Computer Vision</div>
+				</div>
+				<div class="mt-6 text-xs w-full float-left">
+					<div onclick="showGallery('fashion');" id="fashion"
+						 class="nav text-gray-800 w-full float-left mt-1">A History of Fashion
+					</div>
+					<div onclick="showGallery('faces');" id="faces"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Morphing Faces
+					</div>
+				</div>
+			</div>
 
-    </div>
 
-    <div id="bay-area-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2">
-    	<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
+			<div class="w-full text-center float-left">
+				<div class="uppercase mt-6 text-base float-left w-full">
+					<div class="text-gray-400 subtitle">Virtual Reality</div>
+				</div>
+				<div class="mt-6 text-xs w-full float-left">
+					<div onclick="showGallery('wildfire');" id="wildfire"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Wildfire Visualization
+					</div>
+					<div onclick="showGallery('dice');" id="dice"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Dice Game
+					</div>
+				</div>
+			</div>
+
+
+			<div class="w-full text-center float-left">
+				<div class="uppercase mt-6 text-base float-left w-full">
+					<div class="text-gray-400 subtitle">UI & UX</div>
+				</div>
+				<div class="mt-6 text-xs w-full float-left">
+					<div onclick="showGallery('nartwhal');" id="nartwhal"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Nartwhal
+					</div>
+					<div onclick="showGallery('nasa');" id="nasa"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">NASA Ames Research Center
+					</div>
+					<div onclick="showGallery('usra');" id="usra"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Universities Space Research Association
+					</div>
+
+					<!--<div onclick="showGallery('riacs');" id="riacs"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">RIACS
+					</div>
+					<div onclick="showGallery('insight');" id="insight"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">NASA Insight
+					</div>-->
+				</div>
+			</div>
+
+			<div class="w-full text-center float-left">
+				<div class="uppercase mt-6 text-base">
+					<div class="text-gray-400 subtitle">studio</div>
+				</div>
+				<div class="mt-6 text-xs w-full float-left">
+					<div onclick="showGallery('bay-area');" id="bay-area"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">
+						Bay Area series
+					</div>
+					<div onclick="showGallery('audumbla');" id="audumbla"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Auðumbla
+					</div>
+					<div onclick="showGallery('pond-series');" id="pond-series"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Pond series
+					</div>
+					<div onclick="showGallery('still-life');" id="still-life"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Still life
+					</div>
+					<div onclick="showGallery('yosemite-valley');" id="yosemite-valley"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Yosemite valley
+					</div>
+					<div onclick="showGallery('borges-series');" id="borges-series"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Borges series
+					</div>
+					<div onclick="showGallery('warboar');" id="warboar"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">Warboar
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full text-center float-left">
+				<div class="uppercase my-8 text-base subtitle">
+					<div onclick="showGallery('about');" id="about"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left">About
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="bay-area-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2">
+			<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/studio/2021/Bay Area/painting 1.jpeg" target="_blank" title="Palace of Fine Arts">
-						<image class="m-auto max-h-full max-w-full" src="images/studio/2021/Bay Area/painting 1.jpeg"></image>
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/studio/2021/Bay Area/painting 1.jpeg"></image>
 					</a>
 				</div>
 			</div>
@@ -91,7 +153,8 @@
 			<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/studio/2021/Bay Area/painting 2.jpeg" target="_blank" title="Alcatraz Island">
-						<image class="m-auto max-h-full max-w-full" src="images/studio/2021/Bay Area/painting 2.jpeg"></image>
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/studio/2021/Bay Area/painting 2.jpeg"></image>
 					</a>
 				</div>
 			</div>
@@ -112,15 +175,24 @@
 				</div>
 			</div>
 			<div class="w-full float-left text-xs p-4 text-gray-800">
-				<div class="w-full float-left my-1">Each painting in the Bay Area series is an exercise in imagining what an iconic sight could look like in a dystopian future, where Earth has been through an environmental disaster and all the oceans & most of the atmosphere have disappeared.</div>
-				<div class="w-full float-left my-1">The Palace of Fine Arts painting depicts a desert in place of the San Francisco bay and the Fine Arts Palace ruined building.</div>
-				<div class="w-full float-left my-1">The Alcatraz Island features a canyon between the Alcatraz Island and the city of San Francisco, where the ocean floor used to be.</div>
-				<div class="w-full float-left my-1">Both paintings were inspired by science-fiction literature, especially the Dune series by Frank Herbert and NASA Perseverance rover landing on Mars.</div>
+				<div class="w-full float-left my-1">Each painting in the Bay Area series is an exercise in imagining what an
+					iconic sight could look like in a dystopian future, where Earth has been through an environmental
+					disaster and all the oceans & most of the atmosphere have disappeared.
+				</div>
+				<div class="w-full float-left my-1">The Palace of Fine Arts painting depicts a desert in place of the San
+					Francisco bay and the Fine Arts Palace ruined building.
+				</div>
+				<div class="w-full float-left my-1">The Alcatraz Island features a canyon between the Alcatraz Island and
+					the city of San Francisco, where the ocean floor used to be.
+				</div>
+				<div class="w-full float-left my-1">Both paintings were inspired by science-fiction literature, especially
+					the Dune series by Frank Herbert and NASA Perseverance rover landing on Mars.
+				</div>
 			</div>
-    </div>
+		</div>
 
 		<div id="audumbla-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
-    	<div class="w-full lg:h-96 float-left text-center">
+			<div class="w-full lg:h-96 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/studio/2020/Audumbla/IMG-2163.JPG" target="_blank" title="Auðumbla">
 						<image class="m-auto max-h-full max-w-full" src="images/studio/2020/Audumbla/IMG-2163.JPG"></image>
@@ -140,10 +212,10 @@
 				<div class="w-full float-left p-4 text-xs text-gray-600">
 				</div>
 			</div>
-    </div>
+		</div>
 
 		<div id="pond-series-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
-    	<div class="w-full lg:w-1/3 lg:h-60 float-left text-center">
+			<div class="w-full lg:w-1/3 lg:h-60 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/studio/2020/Pond series/pond1.png" target="_blank" title="Pond #1">
 						<image class="m-auto max-h-full max-w-full" src="images/studio/2020/Pond series/pond1.png"></image>
@@ -205,7 +277,7 @@
 					<div class="w-full float-left">acrylic paint, glazing medium</div>
 				</div>
 			</div>
-    </div>
+		</div>
 
 		<div id="still-life-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
 			<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
@@ -252,10 +324,11 @@
 		</div>
 
 		<div id="yosemite-valley-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
-    	<div class="w-full lg:h-96 float-left text-center">
+			<div class="w-full lg:h-96 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/studio/2020/Yosemite valley/Yosemite.jpeg" target="_blank" title="Yosemite valley">
-						<image class="m-auto max-h-full max-w-full" src="images/studio/2020/Yosemite valley/yosemite.jpeg"></image>
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/studio/2020/Yosemite valley/yosemite.jpeg"></image>
 					</a>
 				</div>
 			</div>
@@ -271,13 +344,14 @@
 				<div class="w-full float-left p-4 text-xs text-gray-600">
 				</div>
 			</div>
-    </div>
+		</div>
 
 		<div id="borges-series-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
-    	<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
+			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/studio/2019/Borges series/circular ruins.jpeg" target="_blank" title="Circular Ruins">
-						<image class="m-auto max-h-full max-w-full" src="images/studio/2019/Borges series/circular ruins.jpeg"></image>
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/studio/2019/Borges series/circular ruins.jpeg"></image>
 					</a>
 				</div>
 			</div>
@@ -291,8 +365,10 @@
 			</div>
 			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
-					<a href="images/studio/2019/Borges series/library of babel.jpeg" target="_blank" title="Library of Babel">
-						<image class="m-auto max-h-full max-w-full" src="images/studio/2019/Borges series/library of babel.jpeg"></image>
+					<a href="images/studio/2019/Borges series/library of babel.jpeg" target="_blank"
+					   title="Library of Babel">
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/studio/2019/Borges series/library of babel.jpeg"></image>
 					</a>
 				</div>
 			</div>
@@ -308,7 +384,8 @@
 			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/studio/2019/Borges series/the immortal.jpeg" target="_blank" title="The Immortal">
-						<image class="m-auto max-h-full max-w-full" src="images/studio/2019/Borges series/the immortal.jpeg"></image>
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/studio/2019/Borges series/the immortal.jpeg"></image>
 					</a>
 				</div>
 			</div>
@@ -336,7 +413,7 @@
 					<div class="w-full float-left">charcoal, chalk, ink pen</div>
 				</div>
 			</div>
-    </div>
+		</div>
 
 		<div id="warboar-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
 			<div class="w-full lg:h-96 float-left text-center">
@@ -378,8 +455,10 @@
 			</div>
 			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
-					<a href="images/ui-ux/2020-2021/Nartwhal/nartwhal visual identity.pdf" target="_blank" title="Nartwhal visual identity guide">
-						<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2020-2021/Nartwhal/nartwhal cover.png"></image>
+					<a href="images/ui-ux/2020-2021/Nartwhal/nartwhal visual identity.pdf" target="_blank"
+					   title="Nartwhal visual identity guide">
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/ui-ux/2020-2021/Nartwhal/nartwhal cover.png"></image>
 					</a>
 				</div>
 			</div>
@@ -394,8 +473,10 @@
 
 			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
-					<a href="images/ui-ux/2020-2021/Nartwhal/color palette.png" target="_blank" title="Nartwhal color palette">
-						<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2020-2021/Nartwhal/color palette.png"></image>
+					<a href="images/ui-ux/2020-2021/Nartwhal/color palette.png" target="_blank"
+					   title="Nartwhal color palette">
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/ui-ux/2020-2021/Nartwhal/color palette.png"></image>
 					</a>
 				</div>
 			</div>
@@ -424,9 +505,16 @@
 				</div>
 			</div>
 			<div class="w-full float-left text-xs p-4 text-gray-800">
-				<div class="w-full float-left my-1">Nartwhal is a search and discovery engine for art exhibits. Nartwhal helps people of all backgrounds discover art exhibits based on their preferred location and customizable art preferences.</div>
-				<div class="w-full float-left my-1">This visual design identity guide is the Nartwhal brand for all web-enabled devices and print media.</div>
-				<div class="w-full float-left mt-2 text-base text-center mx-auto">Nartwhal prototype mobile app walkthrough:</div>
+				<div class="w-full float-left my-1">Nartwhal is a search and discovery engine for art exhibits. Nartwhal
+					helps people of all backgrounds discover art exhibits based on their preferred location and customizable
+					art preferences.
+				</div>
+				<div class="w-full float-left my-1">This visual design identity guide is the Nartwhal brand for all
+					web-enabled devices and print media.
+				</div>
+				<div class="w-full float-left mt-2 text-base text-center mx-auto">Nartwhal prototype mobile app
+					walkthrough:
+				</div>
 				<div class="w-full float-left text-center my-2">
 					<div class="w-full text-center float-left m-auto">
 						<video class="max-w-screen-sm m-auto" width="240" height="auto" controls>
@@ -455,9 +543,16 @@
 			</div>
 			<div class="w-full float-left text-xs p-4 text-gray-800">
 				<div class="w-full float-left p-4 text-xs text-gray-800">
-					<div class="w-full float-left my-1">NASA Academic Mission Services (NAMS) is a modern website and content management platform that showcases research capabilities & programs of the NASA contract.</div>
-					<div class="w-full float-left my-1">Designed & developed user interface for the website & collaborated on the website content.</div>
-					<div class="w-full float-left mt-2 text-base text-center mx-auto"><a href="https://nams.usra.edu/" target="_blank" class="hover:text-gray-500">NAMS website</a></div>
+					<div class="w-full float-left my-1">NASA Academic Mission Services (NAMS) is a modern website and
+						content management platform that showcases research capabilities & programs of the NASA contract.
+					</div>
+					<div class="w-full float-left my-1">Designed & developed user interface for the website & collaborated
+						on the website content.
+					</div>
+					<div class="w-full float-left mt-2 text-base text-center mx-auto"><a href="https://nams.usra.edu/"
+																						 target="_blank"
+																						 class="hover:text-gray-500">NAMS
+						website</a></div>
 				</div>
 			</div>
 		</div>
@@ -465,8 +560,10 @@
 		<div id="quantum-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
 			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
-					<a href="images/ui-ux/2020-2021/Quantum/quantum modules.png" target="_blank" title="Quantum modules page">
-						<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2020-2021/Quantum/quantum modules.png"></image>
+					<a href="images/ui-ux/2020-2021/Quantum/quantum modules.png" target="_blank"
+					   title="Quantum modules page">
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/ui-ux/2020-2021/Quantum/quantum modules.png"></image>
 					</a>
 				</div>
 			</div>
@@ -481,7 +578,8 @@
 			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/ui-ux/2020-2021/Quantum/quantum course.png" target="_blank" title="Quantum course page">
-						<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2020-2021/Quantum/quantum course.png"></image>
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/ui-ux/2020-2021/Quantum/quantum course.png"></image>
 					</a>
 				</div>
 			</div>
@@ -496,8 +594,10 @@
 
 			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
-					<a href="images/ui-ux/2020-2021/Quantum/quantum newsletter.png" target="_blank" title="Quantum newsletter page">
-						<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2020-2021/Quantum/quantum newsletter.png"></image>
+					<a href="images/ui-ux/2020-2021/Quantum/quantum newsletter.png" target="_blank"
+					   title="Quantum newsletter page">
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/ui-ux/2020-2021/Quantum/quantum newsletter.png"></image>
 					</a>
 				</div>
 			</div>
@@ -526,9 +626,18 @@
 				</div>
 			</div>
 			<div class="w-full float-left text-xs p-4 text-gray-800">
-				<div class="w-full float-left my-1">Research Institute for Advanced Computer Science Quantum website is a modern web platfrom and content management system that features educational materials, news & team information.</div>
-				<div class="w-full float-left my-1">As part of a two-person software engineering team, designed and developed interactive features including educational platform, search, and automatic newsletter generation.</div>
-				<div class="w-full float-left mt-2 text-base text-center mx-auto"><a href="https://riacs.usra.edu/quantum" target="_blank" class="hover:text-gray-500">Quantum website</a></div>
+				<div class="w-full float-left my-1">Research Institute for Advanced Computer Science Quantum website is a
+					modern web platfrom and content management system that features educational materials, news & team
+					information.
+				</div>
+				<div class="w-full float-left my-1">As part of a two-person software engineering team, designed and
+					developed interactive features including educational platform, search, and automatic newsletter
+					generation.
+				</div>
+				<div class="w-full float-left mt-2 text-base text-center mx-auto"><a href="https://riacs.usra.edu/quantum"
+																					 target="_blank"
+																					 class="hover:text-gray-500">Quantum
+					website</a></div>
 			</div>
 		</div>
 
@@ -550,8 +659,14 @@
 			</div>
 			<div class="w-full float-left text-xs p-4 text-gray-800">
 				<div class="w-full float-left p-4 text-xs text-gray-800">
-					<div class="w-full float-left my-1">Research Institute for Advanced Computer Science (RIACS) website is a modern website and content management system that showcases the institute’s history & current research capabilities.</div>
-					<div class="w-full float-left mt-2 text-base text-center mx-auto"><a href="https://riacs.usra.edu/" target="_blank" class="hover:text-gray-500">RIACS website</a></div>
+					<div class="w-full float-left my-1">Research Institute for Advanced Computer Science (RIACS) website is
+						a modern website and content management system that showcases the institute’s history & current
+						research capabilities.
+					</div>
+					<div class="w-full float-left mt-2 text-base text-center mx-auto"><a href="https://riacs.usra.edu/"
+																						 target="_blank"
+																						 class="hover:text-gray-500">RIACS
+						website</a></div>
 				</div>
 			</div>
 		</div>
@@ -560,7 +675,8 @@
 			<div class="w-full lg:h-96 float-left text-center">
 				<div class="w-full m-auto h-full p-4">
 					<a href="images/ui-ux/2015-2020/NASA Insight/EVA-home.png" target="_blank" title="EVA Home">
-						<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2015-2020/NASA Insight/EVA-home.png"></image>
+						<image class="m-auto max-h-full max-w-full"
+							   src="images/ui-ux/2015-2020/NASA Insight/EVA-home.png"></image>
 					</a>
 				</div>
 			</div>
@@ -574,47 +690,46 @@
 			</div>
 			<div class="w-full float-left text-xs p-4 text-gray-800">
 				<div class="w-full float-left p-4 text-xs text-gray-800">
-					<div class="w-full float-left my-1">NASA Insight is a web platform that integrates, aggregates and analyzes data from various technical and managerial data sources within NASA.</div>
-					<div class="w-full float-left my-1">Used by several NASA teams including Extravehicular Activity (EVA) office at Johnson Space Center, office of Safety and Mission Assurance at Stennis Space Center, and Information Resource Directorate at Johnson Space Center, among others.</div>
-					<div class="w-full float-left my-1">Part of a 3-5 person engineering team, responsible for design & development of search & view pages, visual style guides, and micro-services that post-process data.</div>
+					<div class="w-full float-left my-1">NASA Insight is a web platform that integrates, aggregates and
+						analyzes data from various technical and managerial data sources within NASA.
+					</div>
+					<div class="w-full float-left my-1">Used by several NASA teams including Extravehicular Activity (EVA)
+						office at Johnson Space Center, office of Safety and Mission Assurance at Stennis Space Center, and
+						Information Resource Directorate at Johnson Space Center, among others.
+					</div>
+					<div class="w-full float-left my-1">Part of a 3-5 person engineering team, responsible for design &
+						development of search & view pages, visual style guides, and micro-services that post-process data.
+					</div>
 				</div>
 			</div>
 		</div>
 
-
 		<div id="about-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
-			<div class="w-full float-left text-xs p-4 text-gray-800">
-				<div class="w-full float-left my-1">I’m an artist & designer.</div>
-				<div class="w-full float-left my-1">I use both traditional media & digital media.</div>
-				<div class="w-full float-left my-1">In my studio art practice, I use acrylic paints, charcoal & graphite.</div>
-				<div class="w-full float-left my-1">In my digital art practice, I design user interfaces, icons & branding styles for websites using modern, clean and minimalist aesthetics.</div>
-				<div class="w-full float-left my-1">My studio art draws themes from literary works of science-fiction, fantasy and philosophy. I aim to capture the same feeling you get when you are immersed in a great book, losing all sense of the world around you.</div>
-				<div class="w-full float-left my-1">I relish the opportunity to create a coherent visual narrative both in my user interface design and studio art.</div>
-				<div class="w-full float-left">
-					<div class="w-full m-auto h-full p-4">
-						<a href="images/studio/2018/Acrylic Pour/2018-12-11.jpg" target="_blank" title="Purple & Green">
-							<image class="m-auto max-h-full max-w-full w-60" src="images/studio/2018/Acrylic Pour/2018-12-11.jpg"></image>
-						</a>
-					</div>
-					<div class="w-full float-left text-center">
-						<div class="w-full float-left p-4 text-xs text-gray-600">
-							<div class="w-full float-left italic">Purple & Green</div>
-							<div class="w-full float-left">2018</div>
-							<div class="w-full float-left">20” x 20”</div>
-							<div class="w-full float-left">acrylic paint, acrylic pour</div>
-						</div>
-					</div>
+
+			<div class="w-full float-left">
+				<div class="w-full m-auto h-full p-4">
+					<image class="m-auto max-h-full max-w-full w-60" src="images/photo%20square.jpeg" style="border-radius:50%;"></image>
+				</div>
+			</div>
+
+			<div class="w-full float-left text-xs p-4 text-gray-800 text-lg">
+				<p class="m-4">I design software products that delight users. In addition to being aesthetically pleasing, I hope to make technology more inclusive for people with different abilities. As a software engineer at USRA / NASA, I helped build user interfaces of tools that brought data to life. Currently, I’m applying my skills to classes and the capstone project at UC Berkeley MEng program in Electrical Engineering and Computer Sciences. Through this program, I’m gaining technical skills, such as immersive computing in Unity and computational image processing in Python, and leadership skills through classes at the Fung Institute for Engineering Leadership. Furthermore, I’m deepening my understanding of what makes a user interaction intuitive. From visual components, to layouts, to underlying code, I am leading teams that create products with seamless experiences. I hope to make the world a more inclusive place, one product at a time.
+				</p>
+				<p class="m-4">I relish the opportunity to create a coherent visual narrative both in my engineering practice, user interface design, and studio art.</p>
+				<p class="m-4">In my digital practice, I design programs, icons & branding styles for web platforms using modern, clean and minimalist aesthetics. My studio art draws themes from literary works of science-fiction, fantasy and philosophy. I aim to capture the same feeling you get when you are immersed in a great book, losing all sense of the world around you.</p>
 			</div>
 		</div>
+		<!-- JavaScript Files -->
+		<script src="js/app.js"></script>
+	</div>
 
+	<div class="w-full float-left my-8">
+		<hr/>
+	</div>
 
-  </div>
+	<footer class="w-full p-8 text-center my-2 float-left">
+		<p class="text-xs text-gray-400">© 2022 Irina Hallinan</p>
+	</footer>
 
-  <footer class="w-full p-8 text-center mt-2 float-left">
-    	<p class="text-xs text-gray-400">© 2022 Irina Hallinan</p>
-  </footer>
-
-	<!-- JavaScript Files -->
-	<script src="js/app.js"></script>
 </body>
 </html>
