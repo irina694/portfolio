@@ -58,6 +58,9 @@
 					<div onclick="showGallery('faces');" id="faces"
 						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Morphing Faces
 					</div>
+					<div onclick="showGallery('panoramas');" id="panoramas"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Photo Mosaics
+					</div>
 				</div>
 			</div>
 
@@ -203,6 +206,32 @@
 					</p>
 
 					<p class="my-8 mx-4">Details can be seen on the <a class="cursor-pointer text-gray-500 hover:text-gray-800" href="https://inst.eecs.berkeley.edu/~cs194-26/fa22/upload/files/proj3/cs194-26-ady/" target="_blank"> project website</a>.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="panoramas-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
+			<div class="w-full float-left text-gray-600">
+				<div class="w-full m-auto h-full p-4">
+					<h1 class="mb-16 font-bold text-center text-4xl">Photo Mosaics</h1>
+
+					<h2 class="m-4 font-bold text-center text-2xl mb-8">Creating Automatic Panoramas</h2>
+
+					<div class="w-full float-left">
+						<h1 class="m-4 font-bold text-center text-xl">Overview</h1>
+					</div>
+
+					<p class="m-4">For the first part of this project, I took photograph of places that I thought would be interesting to stitch into a mosaic, which is an approximation of a photograph taken by a single large field-of-view camera. Moreover, panoramic mosaics can span more than 180 degrees. I chose three sets of images in indoor and outdoor settings, picking locations that have many specific details and horizontal and vertical lines to help with picking correspondence points. For the second part of the project, I implemented auto-stitching of image mosaics, based on the paper by M. Brown et al., "Multi-Image Matching using Multi-Scale Oriented Patches" (2005). I used the same photos in both parts to test the automatic feature detection.</p>
+
+					<p class="my-8 mx-4">Details can be seen on the <a class="cursor-pointer text-gray-500 hover:text-gray-800" href="https://inst.eecs.berkeley.edu/~cs194-26/fa22/upload/files/proj4B/cs194-26-ady/" target="_blank"> project website</a>.</p>
+
+					<div class="w-full m-auto h-full p-4">
+						<a href="images/vision/house_mosaic.png" target="_blank" title="House Mosaic">
+							<image class="m-auto max-h-full max-w-full" src="images/vision/house_mosaic.png"></image>
+						</a>
+					</div>
+
+
 				</div>
 			</div>
 		</div>
