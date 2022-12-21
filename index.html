@@ -32,7 +32,15 @@
 			</div>
 
 			<div class="w-full text-center float-left">
-				<div class="uppercase my-6 text-base">
+				<div class="uppercase mt-6 text-base subtitle">
+					<div onclick="showGallery('about');" id="about"
+						 class="nav hover:text-gray-800 w-full float-left">About
+					</div>
+				</div>
+			</div>
+
+			<div class="w-full text-center float-left">
+				<div class="uppercase mt-6 text-base">
 					<div class="nav cursor-pointer text-gray-500 hover:text-gray-800 subtitle">
 						<a href="images/Irina_Hallinan_EECS_2023.pdf" target="_blank">Resume</a>
 					</div>
@@ -43,9 +51,9 @@
 				<div class="uppercase mt-6 text-base float-left w-full">
 					<div class="text-gray-400 subtitle">Computer Vision</div>
 				</div>
-				<div class="mt-6 text-xs w-full float-left">
+				<div class="mt-2 text-xs w-full float-left">
 					<div onclick="showGallery('fashion');" id="fashion"
-						 class="nav text-gray-800 w-full float-left mt-2">A History of Fashion
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">A History of Fashion
 					</div>
 					<div onclick="showGallery('faces');" id="faces"
 						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Morphing Faces
@@ -58,7 +66,7 @@
 				<div class="uppercase mt-6 text-base float-left w-full">
 					<div class="text-gray-400 subtitle">Virtual Reality</div>
 				</div>
-				<div class="mt-6 text-xs w-full float-left">
+				<div class="mt-2 text-xs w-full float-left">
 					<div onclick="showGallery('wildfire');" id="wildfire"
 						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Wildfire Visualization
 					</div>
@@ -72,23 +80,16 @@
 				<div class="uppercase mt-6 text-base float-left w-full">
 					<div class="text-gray-400 subtitle">UI & UX</div>
 				</div>
-				<div class="mt-6 text-xs w-full float-left">
+				<div class="mt-2 text-xs w-full float-left">
 					<div onclick="showGallery('nartwhal');" id="nartwhal"
 						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Nartwhal
 					</div>
 					<div onclick="showGallery('nasa');" id="nasa"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">NASA Ames Research Center
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">NASA
 					</div>
 					<div onclick="showGallery('usra');" id="usra"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Universities Space Research Association
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">USRA
 					</div>
-
-					<!--<div onclick="showGallery('riacs');" id="riacs"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">RIACS
-					</div>
-					<div onclick="showGallery('insight');" id="insight"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-1">NASA Insight
-					</div>-->
 				</div>
 			</div>
 
@@ -96,13 +97,10 @@
 				<div class="uppercase mt-6 text-base">
 					<div class="text-gray-400 subtitle">studio</div>
 				</div>
-				<div class="mt-6 text-xs w-full float-left">
+				<div class="mt-2 text-xs w-full float-left">
 					<div onclick="showGallery('bay-area');" id="bay-area"
 						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">
 						Bay Area series
-					</div>
-					<div onclick="showGallery('audumbla');" id="audumbla"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Auðumbla
 					</div>
 					<div onclick="showGallery('pond-series');" id="pond-series"
 						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Pond series
@@ -110,31 +108,35 @@
 					<div onclick="showGallery('still-life');" id="still-life"
 						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Still life
 					</div>
-					<div onclick="showGallery('yosemite-valley');" id="yosemite-valley"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Yosemite valley
-					</div>
 					<div onclick="showGallery('borges-series');" id="borges-series"
 						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Borges series
-					</div>
-					<div onclick="showGallery('warboar');" id="warboar"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Warboar
-					</div>
-				</div>
-			</div>
-
-			<div class="w-full text-center float-left">
-				<div class="uppercase my-8 text-base subtitle">
-					<div onclick="showGallery('about');" id="about"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left">About
 					</div>
 				</div>
 			</div>
 
 		</div>
 
+		<!-- ABOUT -->
+		<div id="about-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2">
+
+			<div class="w-full float-left">
+				<div class="w-full m-auto h-full p-4">
+					<image class="m-auto max-h-full max-w-full w-60" src="images/photo%20square.jpeg" style="border-radius:50%;"></image>
+				</div>
+			</div>
+
+			<div class="w-full float-left text-xs p-4 text-gray-800 text-lg">
+				<p class="m-4">Hello! I design software products that delight users. In addition to being aesthetically pleasing, I hope to make technology more inclusive for people with different abilities. As a software engineer at USRA / NASA, I helped build user interfaces of tools that brought data to life. Currently, I’m applying my skills to classes and the capstone project at UC Berkeley MEng program in Electrical Engineering and Computer Sciences. Through this program, I’m gaining technical skills, such as immersive computing in Unity and computational image processing in Python, and leadership skills through classes at the Fung Institute for Engineering Leadership. Furthermore, I’m deepening my understanding of what makes a user interaction intuitive. From visual components, to layouts, to underlying code, I am leading teams that create products with seamless experiences. I hope to make the world a more inclusive place, one product at a time.
+				</p>
+				<p class="m-4">I relish the opportunity to create a coherent visual narrative both in my engineering practice, user interface design, and studio art.</p>
+				<p class="m-4">In my digital practice, I design programs, icons, and branding styles for web platforms using modern, clean and minimalist aesthetics. My studio art draws themes from literary works of science-fiction, fantasy and philosophy. I aim to capture the same feeling you get when you are immersed in a great book, losing all sense of the world around you.</p>
+				<p class="m-4">Topics I'm interested in outside of engineering, product management, and art are diversity in tech and education. Here's an article I wrote about the state of diversity in tech and strategies to increase diverse representation on <a href="https://irina-hallinan.medium.com/the-rocky-road-of-diversifying-tech-d8dbdb797f1c" target="_blank" class="cursor-pointer text-gray-500 hover:text-gray-800">Medium</a>. </p>
+			</div>
+		</div>
+
 		<!-- COMPUTER VISION -->
 
-		<div id="fashion-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2">
+		<div id="fashion-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
 			<div class="w-full float-left text-gray-600">
 				<div class="w-full m-auto h-full p-4">
 					<h1 class="mb-16 font-bold text-center text-4xl">A History of Fashion</h1>
@@ -276,7 +278,7 @@
 						<h1 class="m-4 font-bold text-center text-xl">Overview</h1>
 					</div>
 
-					<p class="m-4">Nartwhal is a search and discovery engine for art exhibits. Nartwhal helps people of all backgrounds discover art exhibits based on their preferred location and customizable art preferences. I designed and built the application prototype using Adobe Creative Cloud: XD, Illustrator, and inDesign. This project was the final course in the 8-course Interaction Design specialization by the University of California, San Diego, on <a class="cursor-pointer text-gray-500 hover:text-gray-800" href="https://www.coursera.org/account/accomplishments/specialization/certificate/A547VXDSUGN4" target="_blank">Coursera</a>.</p>
+					<p class="m-4">Nartwhal is a search and discovery engine for art exhibits. Nartwhal helps people of all backgrounds discover art exhibits based on their preferred location and customizable art preferences. I designed and built the application prototype using Adobe Creative Cloud tools, including XD, Illustrator, and inDesign. This project was the final course in the 8-course Interaction Design specialization by the University of California, San Diego, on <a class="cursor-pointer text-gray-500 hover:text-gray-800" href="https://www.coursera.org/account/accomplishments/specialization/certificate/A547VXDSUGN4" target="_blank">Coursera</a>.</p>
 
 					<p class="m-4">The visual design identity for all
 						web-enabled devices and print media can be viewed <a class="cursor-pointer text-gray-500 hover:text-gray-800" href="images/ui-ux/2020-2021/Nartwhal/nartwhal visual identity.pdf" target="_blank">here</a>.
@@ -291,180 +293,132 @@
 			</div>
 		</div>
 
-		<div id="nams-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
-			<div class="w-full lg:h-96 float-left text-center">
+		<div id="nasa-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
+			<div class="w-full float-left text-gray-600">
 				<div class="w-full m-auto h-full p-4">
-					<a href="images/ui-ux/2020-2021/NAMS/nams-home.png" target="_blank" title="NAMS Home">
-						<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2020-2021/NAMS/nams-home.png"></image>
-					</a>
-				</div>
-			</div>
-			<div class="w-full float-left text-center">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">NASA Academic Mission Services</div>
-					<div class="w-full float-left">2020-2021</div>
-					<div class="w-full float-left">Web design & development</div>
-					<div class="w-full float-left">HTML, JavaScript, CSS (Tailwind)</div>
-				</div>
-			</div>
-			<div class="w-full float-left text-xs p-4 text-gray-800">
-				<div class="w-full float-left p-4 text-xs text-gray-800">
-					<div class="w-full float-left my-1">NASA Academic Mission Services (NAMS) is a modern website and
-						content management platform that showcases research capabilities & programs of the NASA contract.
+					<h1 class="mb-16 font-bold text-center text-4xl">NASA Ames Research Center</h1>
+
+					<h2 class="m-4 font-bold text-center text-2xl mb-8">Software Engineering Projects</h2>
+
+					<div class="w-full float-left">
+						<div class="w-full float-left">
+							<h1 class="m-4 font-bold text-center text-xl">International Space Station Particle Database</h1>
+						</div>
+						<p class="m-4">International Space Station (ISS) Particle Database website is a data-driven interactive website that displays air quality data, gathered during sampling experiments in 2016 and 2018. This public-facing website allows users to easily plot and visualize data to learn more about the air quality in an enclosed environment. This platform allows for plotting and visualization of particle composition, geometry, morphology, sampling durations, and collection locations. The tool features an elemental composition pie chart, a plot tool, and an interactive plot tool, in addition to relevant resources and publications. I was responsible for design and development of the website user interface and deployment, using R Shiny frontend library, JavaScript, HTML, and CSS. Furthermore, I collaborated with the NASA Ames Cloud Team to deploy the website using RStudio.</p>
+						<p class="m-4">The full website can be seen <a href="https://iss-particle-db.arc.nasa.gov/" class="cursor-pointer text-gray-500 hover:text-gray-800" target="_blank">here</a>.</p>
+						<p class="m-4">Details about the website and its demonstration can be viewed <a href="https://ttu-ir.tdl.org/bitstream/handle/2346/89716/ICES-2022-160.pdf?sequence=1&isAllowed=y" class="cursor-pointer text-gray-500 hover:text-gray-800" target="_blank">here</a>.</p>
+
+						<div class="w-full m-auto h-full p-4">
+							<a href="images/ui-ux/2020-2021/iss_particle_db.png" target="_blank" title="ISS Particle Database">
+								<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2020-2021/iss_particle_db.png"></image>
+							</a>
+						</div>
 					</div>
-					<div class="w-full float-left my-1">Designed & developed user interface for the website & collaborated
-						on the website content.
+
+					<div class="w-full float-left my-8">
+						<hr/>
 					</div>
-					<div class="w-full float-left mt-2 text-base text-center mx-auto"><a href="https://nams.usra.edu/"
-																						 target="_blank"
-																						 class="hover:text-gray-500">NAMS
-						website</a></div>
+
+					<div class="w-full float-left">
+						<div class="w-full float-left">
+							<h1 class="m-4 font-bold text-center text-xl">NASA Academic Mission Services</h1>
+						</div>
+						<p class="m-4">NASA Academic Mission Services (NAMS) is a modern website and
+							content management platform that showcases research capabilities and programs of the  contract. I designed and developed user interface for the website and collaborated on the website content with program managers, scientists, and engineers, using the MURA backend, and JavaScript, HTML, and CSS on the frontend.</p>
+						<p class="m-4">The full website can be seen <a class="cursor-pointer text-gray-500 hover:text-gray-800" href="https://nams.usra.edu/" target="_blank">here</a>.
+						</p>
+						<div class="w-full m-auto h-full p-4">
+							<a href="images/ui-ux/2020-2021/NAMS/nams-home.png" target="_blank" title="NAMS Home">
+								<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2020-2021/NAMS/nams-home.png"></image>
+							</a>
+						</div>
+					</div>
+
+					<div class="w-full float-left my-8">
+						<hr/>
+					</div>
+
+					<div class="w-full float-left">
+						<div class="w-full float-left">
+							<h1 class="m-4 font-bold text-center text-xl">Insight Platform</h1>
+						</div>
+						<p class="m-4">NASA Insight is a web platform that integrates, aggregates and
+							analyzes data from various technical and managerial data sources within NASA. Used by several NASA teams including Extravehicular Activity (EVA) office at Johnson Space Center, office of Safety and Mission Assurance at Stennis Space Center, and Information Resource Directorate at Johnson Space Center, among others. I designed and developed multiple services and API's that post-process and display data using JavaScript node.js and Python. I also created numerous user interfaces, including search and view pages, as well as visual style guides to support coherent visual style among the platform's modular parts, using JavaScript Koa.js and Express frameworks, HTML and CSS. Furthermore, I was responsible for platform deployment onto Amazon Web Services using Docker containers, in collaboration with the NASA Cloud Team.</p>
+
+						<div class="w-full m-auto h-full p-4">
+							<a href="images/ui-ux/2015-2020/NASA Insight/EVA-home.png" target="_blank" title="EVA Home">
+								<image class="m-auto max-h-full max-w-full"
+									   src="images/ui-ux/2015-2020/NASA Insight/EVA-home.png"></image>
+							</a>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
 
-		<div id="quantum-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
-			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
+		<div id="usra-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
+			<div class="w-full float-left text-gray-600">
 				<div class="w-full m-auto h-full p-4">
-					<a href="images/ui-ux/2020-2021/Quantum/quantum modules.png" target="_blank"
-					   title="Quantum modules page">
-						<image class="m-auto max-h-full max-w-full"
-							   src="images/ui-ux/2020-2021/Quantum/quantum modules.png"></image>
-					</a>
-				</div>
-			</div>
-			<div class="w-full lg:w-1/3 float-left text-center lg:hidden">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">Training Modules</div>
-					<div class="w-full float-left">Quantum, 2020-2021</div>
-					<div class="w-full float-left">Web platform design & development</div>
-					<div class="w-full float-left">PHP (Laravel), HTML (Blade), CSS, AWS</div>
-				</div>
-			</div>
-			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
-				<div class="w-full m-auto h-full p-4">
-					<a href="images/ui-ux/2020-2021/Quantum/quantum course.png" target="_blank" title="Quantum course page">
-						<image class="m-auto max-h-full max-w-full"
-							   src="images/ui-ux/2020-2021/Quantum/quantum course.png"></image>
-					</a>
-				</div>
-			</div>
-			<div class="w-full lg:w-1/3 float-left text-center lg:hidden">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">Course (Introduction to Quantum Computing)</div>
-					<div class="w-full float-left">Quantum, 2020-2021</div>
-					<div class="w-full float-left">Web platform design & development</div>
-					<div class="w-full float-left">PHP (Laravel), HTML (Blade), CSS, AWS</div>
-				</div>
-			</div>
+					<h1 class="mb-16 font-bold text-center text-4xl">Universities Space Research Association (USRA)</h1>
 
-			<div class="w-full lg:w-1/3 lg:h-80 float-left text-center">
-				<div class="w-full m-auto h-full p-4">
-					<a href="images/ui-ux/2020-2021/Quantum/quantum newsletter.png" target="_blank"
-					   title="Quantum newsletter page">
-						<image class="m-auto max-h-full max-w-full"
-							   src="images/ui-ux/2020-2021/Quantum/quantum newsletter.png"></image>
-					</a>
-				</div>
-			</div>
-			<div class="w-full lg:w-1/3 float-left text-center hidden lg:block">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">Training Modules</div>
-					<div class="w-full float-left">Quantum, 2020-2021</div>
-					<div class="w-full float-left">Web platform design & development</div>
-					<div class="w-full float-left">PHP (Laravel), HTML (Blade), CSS, AWS</div>
-				</div>
-			</div>
-			<div class="w-full lg:w-1/3 float-left hidden text-center lg:block">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">Course (Introduction to Quantum Computing)</div>
-					<div class="w-full float-left">Quantum, 2020-2021</div>
-					<div class="w-full float-left">Web platform design & development</div>
-					<div class="w-full float-left">PHP (Laravel), HTML (Blade), CSS, AWS</div>
-				</div>
-			</div>
-			<div class="w-full lg:w-1/3 float-left text-center">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">Newsletter</div>
-					<div class="w-full float-left">Quantum, 2020-2021</div>
-					<div class="w-full float-left">Web platform design & development</div>
-					<div class="w-full float-left">PHP (Laravel), HTML (Blade), CSS, AWS</div>
-				</div>
-			</div>
-			<div class="w-full float-left text-xs p-4 text-gray-800">
-				<div class="w-full float-left my-1">Research Institute for Advanced Computer Science Quantum website is a
-					modern web platfrom and content management system that features educational materials, news & team
-					information.
-				</div>
-				<div class="w-full float-left my-1">As part of a two-person software engineering team, designed and
-					developed interactive features including educational platform, search, and automatic newsletter
-					generation.
-				</div>
-				<div class="w-full float-left mt-2 text-base text-center mx-auto"><a href="https://riacs.usra.edu/quantum"
-																					 target="_blank"
-																					 class="hover:text-gray-500">Quantum
-					website</a></div>
-			</div>
-		</div>
+					<h2 class="m-4 font-bold text-center text-2xl mb-8">Software Engineering Projects</h2>
 
-		<div id="riacs-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
-			<div class="w-full lg:h-96 float-left text-center">
-				<div class="w-full m-auto h-full p-4">
-					<a href="images/ui-ux/2016/RIACS/riacs-home.png" target="_blank" title="RIACS Home">
-						<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2016/RIACS/riacs-home.png"></image>
-					</a>
-				</div>
-			</div>
-			<div class="w-full float-left text-center">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">Research Institute for Advanced Computer Science</div>
-					<div class="w-full float-left">2016, 2020-2021</div>
-					<div class="w-full float-left">Web design & development</div>
-					<div class="w-full float-left">HTML, JavaScript, CSS</div>
-				</div>
-			</div>
-			<div class="w-full float-left text-xs p-4 text-gray-800">
-				<div class="w-full float-left p-4 text-xs text-gray-800">
-					<div class="w-full float-left my-1">Research Institute for Advanced Computer Science (RIACS) website is
-						a modern website and content management system that showcases the institute’s history & current
-						research capabilities.
+					<div class="w-full float-left">
+						<div class="w-full float-left">
+							<h1 class="m-4 font-bold text-center text-xl">Quantum Platform</h1>
+						</div>
+						<p class="m-4">The Quantum website is a modern web platform and content management system that features educational materials, news, and team information. I designed the frontend of the website. I collaborated with the engineering team on the development of the interactive features, including educational platform, search, and automatic newsletter generation, using Laravel PHP as the backend framework, MySQL as the database, Python and JavaScript for scripts, Blade HTML and Tailwind CSS for styling, and Docker containers. I was responsible for website deployment using Amazon Web Services.
+						</p>
+						<p class="m-4">Full website can be seen <a href="https://riacs.usra.edu/quantum" target="_blank" class="cursor-pointer text-gray-500 hover:text-gray-800" >here</a>.</p>
+						<div class="w-full lg:w-1/2 lg:h-96 float-left text-center">
+							<div class="w-full m-auto h-full p-4">
+								<a href="images/ui-ux/2020-2021/Quantum/quantum course.png" target="_blank" title="Quantum course page">
+									<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2020-2021/Quantum/quantum course.png"></image>
+								</a>
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2 lg:h-96 float-left text-center">
+							<div class="w-full m-auto h-full p-4">
+								<a href="images/ui-ux/2020-2021/Quantum/quantum newsletter.png" target="_blank"
+								   title="Quantum newsletter page">
+									<image class="m-auto max-h-full max-w-full"
+										   src="images/ui-ux/2020-2021/Quantum/quantum newsletter.png"></image>
+								</a>
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2 float-left hidden text-center lg:block">
+							<div class="w-full float-left p-4 text-xs text-gray-600">
+								<div class="w-full float-left italic">Course Example: Introduction to Quantum Computing</div>
+							</div>
+						</div>
+						<div class="w-full lg:w-1/2 float-left text-center">
+							<div class="w-full float-left p-4 text-xs text-gray-600">
+								<div class="w-full float-left italic">Newsletter</div>
+							</div>
+						</div>
 					</div>
-					<div class="w-full float-left mt-2 text-base text-center mx-auto"><a href="https://riacs.usra.edu/"
-																						 target="_blank"
-																						 class="hover:text-gray-500">RIACS
-						website</a></div>
-				</div>
-			</div>
-		</div>
 
-		<div id="insight-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
-			<div class="w-full lg:h-96 float-left text-center">
-				<div class="w-full m-auto h-full p-4">
-					<a href="images/ui-ux/2015-2020/NASA Insight/EVA-home.png" target="_blank" title="EVA Home">
-						<image class="m-auto max-h-full max-w-full"
-							   src="images/ui-ux/2015-2020/NASA Insight/EVA-home.png"></image>
-					</a>
-				</div>
-			</div>
-			<div class="w-full float-left text-center">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">NASA Insight Platform</div>
-					<div class="w-full float-left">2015 - 2020</div>
-					<div class="w-full float-left">Web design & development</div>
-					<div class="w-full float-left">HTML, JavaScript (Backbone, Node, Koa, Express), CSS</div>
-				</div>
-			</div>
-			<div class="w-full float-left text-xs p-4 text-gray-800">
-				<div class="w-full float-left p-4 text-xs text-gray-800">
-					<div class="w-full float-left my-1">NASA Insight is a web platform that integrates, aggregates and
-						analyzes data from various technical and managerial data sources within NASA.
+					<div class="w-full float-left my-8">
+						<hr/>
 					</div>
-					<div class="w-full float-left my-1">Used by several NASA teams including Extravehicular Activity (EVA)
-						office at Johnson Space Center, office of Safety and Mission Assurance at Stennis Space Center, and
-						Information Resource Directorate at Johnson Space Center, among others.
-					</div>
-					<div class="w-full float-left my-1">Part of a 3-5 person engineering team, responsible for design &
-						development of search & view pages, visual style guides, and micro-services that post-process data.
+
+
+					<div class="w-full float-left">
+						<div class="w-full float-left">
+							<h1 class="m-4 font-bold text-center text-xl">RIACS Website</h1>
+						</div>
+						<p class="m-4">Research Institute for Advanced Computer Science (RIACS) website is
+							a modern website and content management system that showcases the institute's history and current research capabilities. I designed and developed the frontend of the website using JavaScript, HTML, and CSS, and created the new website logo. I collaborated with the RIACS director, program managers, and designer on the content and look of the site, and used the MURA backend to add content.
+						</p>
+						<p class="m-4">Full website can be seen <a href="https://riacs.usra.edu" target="_blank" class="cursor-pointer text-gray-500 hover:text-gray-800" >here</a>.</p>
+						<div class="w-full lg:h-96 float-left text-center">
+							<div class="w-full m-auto h-full p-4">
+								<a href="images/ui-ux/2016/RIACS/riacs.png" target="_blank" title="Quantum course page">
+									<image class="m-auto max-h-full max-w-full" src="images/ui-ux/2016/RIACS/riacs.png"></image>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -776,21 +730,7 @@
 			</div>
 		</div>
 
-		<div id="about-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
 
-			<div class="w-full float-left">
-				<div class="w-full m-auto h-full p-4">
-					<image class="m-auto max-h-full max-w-full w-60" src="images/photo%20square.jpeg" style="border-radius:50%;"></image>
-				</div>
-			</div>
-
-			<div class="w-full float-left text-xs p-4 text-gray-800 text-lg">
-				<p class="m-4">I design software products that delight users. In addition to being aesthetically pleasing, I hope to make technology more inclusive for people with different abilities. As a software engineer at USRA / NASA, I helped build user interfaces of tools that brought data to life. Currently, I’m applying my skills to classes and the capstone project at UC Berkeley MEng program in Electrical Engineering and Computer Sciences. Through this program, I’m gaining technical skills, such as immersive computing in Unity and computational image processing in Python, and leadership skills through classes at the Fung Institute for Engineering Leadership. Furthermore, I’m deepening my understanding of what makes a user interaction intuitive. From visual components, to layouts, to underlying code, I am leading teams that create products with seamless experiences. I hope to make the world a more inclusive place, one product at a time.
-				</p>
-				<p class="m-4">I relish the opportunity to create a coherent visual narrative both in my engineering practice, user interface design, and studio art.</p>
-				<p class="m-4">In my digital practice, I design programs, icons, and branding styles for web platforms using modern, clean and minimalist aesthetics. My studio art draws themes from literary works of science-fiction, fantasy and philosophy. I aim to capture the same feeling you get when you are immersed in a great book, losing all sense of the world around you.</p>
-			</div>
-		</div>
 		<!-- JavaScript Files -->
 		<script src="js/app.js"></script>
 	</div>
