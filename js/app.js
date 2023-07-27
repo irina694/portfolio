@@ -1,4 +1,7 @@
-/* JavaScript for Portfolio */
+/**
+ * JavaScript for Portfolio
+ * Author: Irina Hallinan
+ * **/
 
 function showGallery(id) {
 
@@ -8,7 +11,7 @@ function showGallery(id) {
     // Highlight selected navigation
 
     var navs = document.getElementsByClassName('nav');
-    console.log(navs);
+    //console.log(navs);
 
     // Remove active class from all navs except for selected nav
     if ( navs ) {
@@ -52,10 +55,10 @@ function showGallery(id) {
     var gallery = document.getElementById(galleryId);
     if ( gallery && gallery.classList ) {
       gallery.classList.remove('hidden');
+
+      // Scroll to the gallery element
+      gallery.scrollIntoView();
     }
 
-    if ( window ) {
-      window.scrollTo(0,0);
-    }
   }
 }
