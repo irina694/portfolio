@@ -145,25 +145,32 @@
 
 
 			<div class="w-full text-center float-left">
-				<div class="uppercase mt-6 text-base">
-					<div class="text-gray-400 subtitle">studio</div>
-				</div>
-				<div class="mt-2 text-xs w-full float-left">
-					<div onclick="showGallery('bay-area');" id="bay-area"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">
-						Bay Area series
-					</div>
-					<div onclick="showGallery('pond-series');" id="pond-series"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Pond series
-					</div>
-					<div onclick="showGallery('still-life');" id="still-life"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Still life
-					</div>
-					<div onclick="showGallery('borges-series');" id="borges-series"
-						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Borges series
+				<div class="uppercase mt-6 text-base subtitle">
+					<div onclick="showGallery('studio');" id="studio"
+						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left">Studio Art
 					</div>
 				</div>
 			</div>
+
+<!--			<div class="uppercase mt-6 text-base">-->
+<!--					<div class="text-gray-400 subtitle">studio</div>-->
+<!--				</div>-->
+<!--				<div class="mt-2 text-xs w-full float-left">-->
+<!--					<div onclick="showGallery('bay-area');" id="bay-area"-->
+<!--						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">-->
+<!--						Bay Area series-->
+<!--					</div>-->
+<!--					<div onclick="showGallery('pond-series');" id="pond-series"-->
+<!--						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Pond series-->
+<!--					</div>-->
+<!--					<div onclick="showGallery('still-life');" id="still-life"-->
+<!--						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Still life-->
+<!--					</div>-->
+<!--					<div onclick="showGallery('borges-series');" id="borges-series"-->
+<!--						 class="nav cursor-pointer text-gray-500 hover:text-gray-800 w-full float-left mt-2">Borges series-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
 
 			<div class="w-full text-center float-left">
 				<div class="my-6">
@@ -471,7 +478,7 @@
 
 					<p class="m-4">For the first part of this project, I took photograph of places that I thought would be interesting to stitch into a mosaic, which is an approximation of a photograph taken by a single large field-of-view camera. Moreover, panoramic mosaics can span more than 180 degrees. I chose three sets of images in indoor and outdoor settings, picking locations that have many specific details and horizontal and vertical lines to help with picking correspondence points. For the second part of the project, I implemented auto-stitching of image mosaics, based on the paper by M. Brown et al., "Multi-Image Matching using Multi-Scale Oriented Patches" (2005). I used the same photos in both parts to test the automatic feature detection.</p>
 
-					<p class="my-8 mx-4">Details can be seen on the <a class="cursor-pointer text-gray-500 hover:text-gray-800" href="https://inst.eecs.berkeley.edu/~cs194-26/fa22/upload/files/proj4B/cs194-26-ady/" target="_blank"> project website</a>.</p>
+<!--					<p class="my-8 mx-4">Details can be seen on the <a class="cursor-pointer text-gray-500 hover:text-gray-800" href="https://inst.eecs.berkeley.edu/~cs194-26/fa22/upload/files/proj4B/cs194-26-ady/" target="_blank"> project website</a>.</p>-->
 
 					<div class="w-full m-auto h-full p-4">
 						<a href="images/vision/house_mosaic.png" target="_blank" title="House Mosaic">
@@ -723,63 +730,74 @@
 
 		<!-- STUDIO -->
 
-		<div id="bay-area-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
-			<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
-				<div class="w-full m-auto h-full p-4">
-					<a href="images/studio/2021/Bay Area/painting 1.jpeg" target="_blank" title="Palace of Fine Arts">
-						<image class="m-auto max-h-full max-w-full"
-							   src="images/studio/2021/Bay Area/painting 1.jpeg"></image>
-					</a>
+		<div id="studio-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
+
+			<div class="w-full float-left text-xs p-4 text-gray-800 text-lg">
+				<p class="m-4 text-lg">
+
+				<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
+					<div class="w-full m-auto h-full p-4">
+						<a href="images/studio/2021/Bay Area/painting 1.jpeg" target="_blank" title="Palace of Fine Arts">
+							<image class="m-auto max-h-full max-w-full"
+								   src="images/studio/2021/Bay Area/painting 1.jpeg"></image>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="w-full lg:w-1/2 float-left text-center lg:hidden">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">Palace of Fine Arts</div>
-					<div class="w-full float-left">Bay Area series, 2021</div>
-					<div class="w-full float-left">24” x 24”</div>
-					<div class="w-full float-left">acrylic paint, glazing medium, wood panel</div>
+				<div class="w-full lg:w-1/2 float-left text-center lg:hidden">
+					<div class="w-full float-left p-4 text-xs text-gray-600">
+						<div class="w-full float-left italic">Palace of Fine Arts</div>
+						<div class="w-full float-left">Bay Area series, 2021</div>
+						<div class="w-full float-left">24” x 24”</div>
+						<div class="w-full float-left">acrylic paint, glazing medium, wood panel</div>
+					</div>
 				</div>
-			</div>
-			<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
-				<div class="w-full m-auto h-full p-4">
-					<a href="images/studio/2021/Bay Area/painting 2.jpeg" target="_blank" title="Alcatraz Island">
-						<image class="m-auto max-h-full max-w-full"
-							   src="images/studio/2021/Bay Area/painting 2.jpeg"></image>
-					</a>
+				<div class="w-full lg:w-1/2 lg:h-80 float-left text-center">
+					<div class="w-full m-auto h-full p-4">
+						<a href="images/studio/2021/Bay Area/painting 2.jpeg" target="_blank" title="Alcatraz Island">
+							<image class="m-auto max-h-full max-w-full"
+								   src="images/studio/2021/Bay Area/painting 2.jpeg"></image>
+						</a>
+					</div>
 				</div>
-			</div>
-			<div class="w-full lg:w-1/2 float-left text-center hidden lg:block">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">Palace of Fine Arts</div>
-					<div class="w-full float-left">Bay Area series, 2021</div>
-					<div class="w-full float-left">24” x 24”</div>
-					<div class="w-full float-left">acrylic paint, glazing medium, wood panel</div>
+				<div class="w-full lg:w-1/2 float-left text-center hidden lg:block">
+					<div class="w-full float-left p-4 text-xs text-gray-600">
+						<div class="w-full float-left italic">Palace of Fine Arts</div>
+						<div class="w-full float-left">Bay Area series, 2021</div>
+						<div class="w-full float-left">24” x 24”</div>
+						<div class="w-full float-left">acrylic paint, glazing medium, wood panel</div>
+					</div>
 				</div>
-			</div>
-			<div class="w-full lg:w-1/2 float-left text-center">
-				<div class="w-full float-left p-4 text-xs text-gray-600">
-					<div class="w-full float-left italic">Alcatraz Island</div>
-					<div class="w-full float-left">Bay Area series, 2021</div>
-					<div class="w-full float-left">24” x 24”</div>
-					<div class="w-full float-left">acrylic paint, glazing medium, wood panel</div>
+				<div class="w-full lg:w-1/2 float-left text-center">
+					<div class="w-full float-left p-4 text-xs text-gray-600">
+						<div class="w-full float-left italic">Alcatraz Island</div>
+						<div class="w-full float-left">Bay Area series, 2021</div>
+						<div class="w-full float-left">24” x 24”</div>
+						<div class="w-full float-left">acrylic paint, glazing medium, wood panel</div>
+					</div>
 				</div>
-			</div>
-			<div class="w-full float-left text-xs p-4 text-gray-800">
-				<div class="w-full float-left m-4">Each painting in the Bay Area series is an exercise in imagining what an
-					iconic sight could look like in a dystopian future, where Earth has been through an environmental
-					disaster and all the oceans & most of the atmosphere have disappeared.
+				<div class="w-full float-left text-xs p-4 text-gray-800">
+					<div class="w-full float-left m-4">Each painting in the Bay Area series is an exercise in imagining what an
+						iconic sight could look like in a dystopian future, where Earth has been through an environmental
+						disaster and all the oceans & most of the atmosphere have disappeared.
+					</div>
+					<div class="w-full float-left m-4">The Palace of Fine Arts painting depicts a desert in place of the San
+						Francisco bay and the Fine Arts Palace ruined building.
+					</div>
+					<div class="w-full float-left m-4">The Alcatraz Island features a canyon between the Alcatraz Island and
+						the city of San Francisco, where the ocean floor used to be.
+					</div>
+					<div class="w-full float-left m-4">Both paintings were inspired by science-fiction literature, especially
+						the Dune series by Frank Herbert and NASA Perseverance rover landing on Mars.
+					</div>
 				</div>
-				<div class="w-full float-left m-4">The Palace of Fine Arts painting depicts a desert in place of the San
-					Francisco bay and the Fine Arts Palace ruined building.
-				</div>
-				<div class="w-full float-left m-4">The Alcatraz Island features a canyon between the Alcatraz Island and
-					the city of San Francisco, where the ocean floor used to be.
-				</div>
-				<div class="w-full float-left m-4">Both paintings were inspired by science-fiction literature, especially
-					the Dune series by Frank Herbert and NASA Perseverance rover landing on Mars.
-				</div>
+
+				</p>
 			</div>
 		</div>
+
+<!--		<div id="bay-area-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">-->
+<!--			-->
+<!--		</div>-->
 
 		<div id="audumbla-gallery" class="gallery w-full lg:w-4/5 float-left min-h-screen p-2 hidden">
 			<div class="w-full lg:h-96 float-left text-center">
